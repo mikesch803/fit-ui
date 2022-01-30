@@ -1,4 +1,8 @@
 .footer {
     grid-area: footer;
+    border-top: 1 px solid var(--COLOR-BLACK);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   

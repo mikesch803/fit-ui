@@ -1,13 +1,13 @@
 .aside {
-    grid-area: sidebar;
-    border-right: 1px solid black;
-    position: sticky;
-    top: 0;
-
+    grid-area: aside;
+    /* box-shadow: var(--BOX-SHADOW-ASIDE); */
+    border-right: 1px solid rgb(202, 201, 201);
   }
 
   .sidebar {
       margin: 2rem;
+      position: sticky;
+    top: 0;
   }
 
   .component-list,

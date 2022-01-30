@@ -3,8 +3,9 @@
     display: flex;
     justify-content: space-between;
     font-weight: 900;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     padding-bottom: 1rem;
+    box-shadow: var(--BOX-SHADOW-HEADER);
   }
 
   
