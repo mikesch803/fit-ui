@@ -1,28 +1,49 @@
 .main {
-    grid-area: main;
-    margin: 2rem;
-  }
+  grid-area: main;
+  margin: 2rem;
+}
 
-  .main-title {
-    margin: 1rem 0;
-  }
+.main-title {
+  margin: 1rem 0;
+}
 
-  .main-para {
-    margin-bottom: 1rem;
-  }
+.main-para {
+  margin-bottom: 1rem;
+}
 
-  .alert {
-    margin: 1rem 0;
-  }
-  
-  .avatar-img, .avatar-text {
-    justify-content: flex-start;
-  }
+.alert {
+  margin: 1rem 0;
+}
 
-  .card-vc,
-  .card-hc {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin: 1rem;
-  }
+.avatar-img,
+.avatar-text {
+  justify-content: flex-start;
+}
+
+.badge-box {
+  margin-bottom: 1rem;
+}
+.badge {
+  margin-top: 1rem;
+}
+
+.btn-inline {
+  display: flex;
+  align-items: center;
+}
+
+.btn-inline .btn {
+  margin-right: 1rem;
+}
+
+.card-vc,
+.card-hc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.img-round-resp {
+  margin: 1rem;
+}
