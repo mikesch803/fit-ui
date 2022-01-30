@@ -1,0 +1,28 @@
+.main {
+    grid-area: main;
+    margin: 2rem;
+  }
+
+  .main-title {
+    margin: 1rem 0;
+  }
+
+  .main-para {
+    margin-bottom: 1rem;
+  }
+
+  .alert {
+    margin: 1rem 0;
+  }
+  
+  .avatar-img, .avatar-text {
+    justify-content: flex-start;
+  }
+
+  .card-vc,
+  .card-hc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
