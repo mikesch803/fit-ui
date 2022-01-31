@@ -1,0 +1,26 @@
+.aside {
+  grid-area: aside;
+  border-right: 1px solid var(--COLOR-PRIMARY);
+}
+
+.sidebar {
+  margin: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.component-list,
+.guide {
+  padding: 1rem;
+}
+
+.component-list li,
+.guide li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.guide li a,
+.component-list li a {
+  text-decoration: none;
+}
