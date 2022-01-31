@@ -25,6 +25,19 @@ iframe {
   word-wrap: wrap;
 }
 
+.floating-action-btn {
+  color: var(--COLOR-PRIMARY);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/******will do it later*****/
+/* 
 @media only screen and (max-width: 800px) {
   html {
     font-size: 50%;
@@ -51,4 +64,4 @@ iframe {
   .main {
     grid-area: main;
   }
-}
+} */
