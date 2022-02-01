@@ -1,7 +1,7 @@
 .main {
   grid-area: main;
   margin: 2rem;
-  max-width: 59rem;
+  max-width: 56.25rem;
 }
 
 .main-title {
@@ -53,6 +53,10 @@
   gap: 1.5rem;
   margin: 1rem;
   align-items: flex-end;
+}
+
+.img-resp {
+  margin-bottom: 1rem;
 }
 
 .img-round-resp {
