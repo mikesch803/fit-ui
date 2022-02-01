@@ -12,7 +12,7 @@
 .fit-ui {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   margin-left: 5.5rem;
   color: var(--COLOR-PRIMARY);
   font-size: 2rem;
@@ -40,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   margin-right: 5.5rem;
 }
 

@@ -1,6 +1,7 @@
 .main {
   grid-area: main;
   margin: 2rem;
+  max-width: 59rem;
 }
 
 .main-title {
@@ -12,14 +13,14 @@
 }
 
 .alert {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .component-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -38,6 +39,7 @@
 .btn-inline {
   display: flex;
   align-items: center;
+  flex-wrap:wrap;
 }
 
 .btn-inline .btn {
@@ -50,6 +52,7 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 1rem;
+  align-items: flex-end;
 }
 
 .img-round-resp {
