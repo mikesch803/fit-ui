@@ -1,10 +1,9 @@
 .header {
-  display: none;
   grid-area: header;
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  padding-bottom: 1rem;
+  padding: 1rem;
   box-shadow: var(--BOX-SHADOW-HEADER);
   flex-wrap: wrap;
 }
@@ -12,8 +11,6 @@
 .fit-ui {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
-  margin-left: 5.5rem;
   color: var(--COLOR-PRIMARY);
   font-size: 2rem;
   font-weight: 700;
@@ -40,8 +37,6 @@
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5rem;
-  margin-right: 5.5rem;
 }
 
 .nav {
