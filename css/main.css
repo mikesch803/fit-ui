@@ -12,53 +12,32 @@
   margin-bottom: 1rem;
 }
 
-.alert {
-  margin-bottom: 1rem;
-}
-
 .component-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
-  width: 100%;
+  gap: 1rem;
+  margin: 0.5rem;
 }
 
-.avatar-img,
-.avatar-text {
-  justify-content: flex-start;
-}
-
-.badge-box {
+.badge-container {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.badge {
-  margin-top: 1rem;
+
+.flex-col {
+  flex-direction: column;
 }
 
-.btn-inline {
-  display: flex;
-  align-items: center;
-  flex-wrap:wrap;
-}
-
-.btn-inline .btn {
-  margin-right: 1rem;
-}
-
-.card-vc,
-.card-hc {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 1rem;
+.flex-end {
   align-items: flex-end;
 }
 
-.img-resp {
-  margin-bottom: 1rem;
+.flex-center {
+  align-items: center;
 }
 
-.img-round-resp {
-  margin: 1rem;
+.form {
+  max-width: 18.75rem;
 }
+
+

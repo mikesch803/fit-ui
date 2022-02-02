@@ -1,6 +1,7 @@
 .aside {
   grid-area: aside;
   border-right: 1px solid var(--COLOR-PRIMARY);
+  font-weight: 600;
 }
 
 .sidebar {
