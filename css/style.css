@@ -24,6 +24,7 @@ body {
 
 iframe {
   word-wrap: wrap;
+  width: 100%;
 }
 
 .floating-action-btn {
@@ -37,11 +38,11 @@ iframe {
   border-radius: 50%;
 }
 
-/******will do it later*****/
-/* 
+/******will do it later(mobile screeen)*****/
+/*
 @media only screen and (max-width: 800px) {
   html {
-    font-size: 50%;
+    font-size: 60%;
   }
 
   .aside {
@@ -66,3 +67,4 @@ iframe {
     grid-area: main;
   }
 } */
+
