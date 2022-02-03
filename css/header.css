@@ -14,6 +14,7 @@
   color: var(--COLOR-PRIMARY);
   font-size: 2rem;
   font-weight: 700;
+  margin-left: 2.5rem;
 }
 
 .nav-links {
