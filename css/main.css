@@ -4,6 +4,16 @@
   max-width: 56.25rem;
 }
 
+.avatar-text,
+.avatar-img,
+.form,
+.badge-container,
+.img-resp,
+.img-resp-round {
+  padding: 1rem;
+  background-color: white;
+}
+
 .main-title {
   margin: 1rem 0;
 }
@@ -17,6 +27,8 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0.5rem;
+  padding: 1rem;
+  background-color: white;
 }
 
 .badge-container {
