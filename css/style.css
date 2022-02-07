@@ -22,12 +22,6 @@ body {
   gap: 1px;
 }
 
-iframe {
-  word-wrap: wrap;
-  width: 100%;
-  margin: 2rem 0;
-}
-
 .floating-action-btn {
   color: var(--COLOR-PRIMARY);
   position: fixed;

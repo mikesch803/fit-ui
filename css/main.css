@@ -1,17 +1,9 @@
 .main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 2rem;
-  max-width: 56.25rem;
-}
-
-.avatar-text,
-.avatar-img,
-.form,
-.badge-container,
-.img-resp,
-.img-resp-round {
-  padding: 1rem;
-  background-color: white;
 }
 
 .main-title {
@@ -26,14 +18,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 0.5rem;
+  margin: 1rem 0;
   padding: 1rem;
-  background-color: white;
-}
-
-.badge-container {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  background-color: #f3f3f3;
+  justify-content: center;
 }
 
 .flex-col {
@@ -49,7 +37,15 @@
 }
 
 .form {
-  max-width: 18.75rem;
+  width: 100%;
+  max-width: 30rem;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.navbar {
+  margin-bottom: 1rem;
 }
 
 
