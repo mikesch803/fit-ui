@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="./css/aside.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" />
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script src="./highlight/highlight.js"></script>
 </head>
 
 <body>
@@ -50,206 +56,299 @@
                     <li><a class="btn btn-link" href="#card">Card</a></li>
                     <li><a class="btn btn-link" href="#image">Image</a></li>
                     <li><a class="btn btn-link" href="#input">Input</a></li>
+                    <li><a class="btn btn-link" href="#text-utilities">Text Utilities</a></li>
+                    <li><a class="btn btn-link" href="#list">List</a></li>
+                    <li><a class="btn btn-link" href="#navigation">Navigation</a></li>
+                    <li><a class="btn btn-link" href="#modal">Modal</a></li>
+                    <li><a class="btn btn-link" href="#rating">Rating</a></li>
+                    <li><a class="btn btn-link" href="#toast">Toast</a></li>
+                    <li><a class="btn btn-link" href="#grid">Grid</a></li>
                 </ul>
             </div>
         </aside>
         <main class="main">
+
             <div class="usage-guide">
                 <h3 class="main-title" id="usage">How To USE ?</h3>
                 <p class="main-para">
                     Copy-paste the stylesheet link into your head tag before all other
                     stylesheets to load our CSS.
                 </p>
+            </div>
 
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcomponent-site-fitui.netlify.app%252Fcomponents%252Fcomponents.css%2522%253E%250A"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 111px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
+            <pre>
+                <code class="language-html">
+                    <link rel="stylesheet" href="https://component-site-fitui.netlify.app/components/components.css">
+                </code>
+            </pre>
 
-                <h3 class="main-title" id="alert">Alerts</h3>
-                <p class="main-para">
-                    Alert with 5 different variants, which can be used differently.
-                </p>
+            <!-- *************alert component*********************************************************** -->
+            <h3 class="main-title" id="alert">Alerts</h3>
+            <p class="main-para">
+                Alert with 5 different variants, which can be used differently.
+            </p>
 
-                <div class="component-container flex-col">
+            <div class="component-container flex-col">
+                <div class="alert alert-primary">This is primary alert!</div>
+                <div class="alert alert-success">This is sucess alert!</div>
+                <div class="alert alert-warning">This is warning alert!</div>
+                <div class="alert alert-danger">This is danger alert!</div>
+                <div class="alert alert-info">This is info alert!</div>
+            </div>
+
+            <pre>
+                <code class="language-html">
                     <div class="alert alert-primary">This is primary alert!</div>
                     <div class="alert alert-success">This is sucess alert!</div>
                     <div class="alert alert-warning">This is warning alert!</div>
                     <div class="alert alert-danger">This is danger alert!</div>
                     <div class="alert alert-info">This is info alert!</div>
+                </code>
+            </pre>
+
+            <!-- *************avatar component*********************************************************** -->
+            <h3 class="main-title" id="avatar">Avatar</h3>
+            <p class="main-para">
+                Avatar available in differnt variants, image avatar, and text avatar
+                with 3 different sizes.
+            </p>
+
+            <div class="avatar-img component-container">
+                <div class="avatar avatar-ls">
+                    <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img">
                 </div>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EThis%2520is%2520primary%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EThis%2520is%2520sucess%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EThis%2520is%2520warning%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EThis%2520is%2520danger%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253EThis%2520is%2520info%2520alert%21%253C%252Fdiv%253E%250A"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 186px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
-
-                <!-- *************avatar component*********************************************************** -->
-                <h3 class="main-title" id="avatar">Avatar</h3>
-                <p class="main-para">
-                    Avatar available in differnt variants, image avatar, and text avatar
-                    with 3 different sizes.
-                </p>
-
-                <div class="avatar-img">
-                    <div class="avatar avatar-ls">
-                        <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img" />
-                    </div>
-                    <div class="avatar avatar-ms">
-                        <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img" />
-                    </div>
-                    <div class="avatar avatar-ss">
-                        <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img" />
-                    </div>
+                <div class="avatar avatar-ms">
+                    <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img">
                 </div>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-ls%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassest%252Fimages%252Favatar-img.jpg%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522circle-img%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-ms%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassest%252Fimages%252Favatar-img.jpg%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522circle-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-ss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassest%252Fimages%252Favatar-img.jpg%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522circle-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 242px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
-
-                <div class="avatar-text">
-                    <div class="avatar avatar-txt avatar-ls">M</div>
-                    <div class="avatar avatar-txt avatar-ms">M</div>
-                    <div class="avatar avatar-txt avatar-ss">M</div>
+                <div class="avatar avatar-ss">
+                    <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img">
                 </div>
+            </div>
 
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-txt%2520avatar-ls%2522%253EM%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-txt%2520avatar-ms%2522%253EM%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-txt%2520avatar-ss%2522%253EM%253C%252Fdiv%253E"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 130px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
+            <pre>
+                <code class="language-html">
+                        <div class="avatar-img">
+                            <div class="avatar avatar-ls">
+                                <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img">
+                            </div>
+                        <div class="avatar avatar-ms">
+                            <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img">
+                        </div>
+                        <div class="avatar avatar-ss">
+                            <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img">
+                        </div>
+                        </div>
+                </code>
+            </pre>
 
-                <!-- *************badge component*********************************************************** -->
-                <h3 class="main-title" id="badge">Badges</h3>
-                <p class="main-para">
-                    Three different variants of badge such as icon badge, text badge,
-                    and image badge.
-                </p>
+            <div class="avatar-text component-container">
+                <div class="avatar avatar-txt avatar-ls">M</div>
+                <div class="avatar avatar-txt avatar-ms">M</div>
+                <div class="avatar avatar-txt avatar-ss">M</div>
+            </div>
 
-                <div class="badge-container">
-                    <div>
-                        <span class="iconify badge-icon-size" data-icon="whh:notificationbottom"
-                            data-inline="false"></span><span class="badge badge-str badge-pos-icon">8</span>
-                    </div>
-                </div>
+            <pre>
+                <code class="language-html">
+                        <div class="avatar-text">
+                            <div class="avatar avatar-txt avatar-ls">M</div>
+                            <div class="avatar avatar-txt avatar-ms">M</div>
+                            <div class="avatar avatar-txt avatar-ss">M</div>
+                        </div>
+                </code>
+            </pre>
 
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522iconify%2520badge-icon-size%2522%2520data-icon%253D%2522whh%253Anotificationbottom%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520data-inline%253D%2522false%2522%253E%253C%252Fspan%253E%253Cspan%2520class%253D%2522badge%2520badge-str%2520badge-pos-icon%2522%253E8%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 130px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
+            <!-- *************badge component*********************************************************** -->
+            <h3 class="main-title" id="badge">Badges</h3>
+            <p class="main-para">
+                Three different variants of badge such as icon badge, text badge,
+                and image badge.
+            </p>
 
+            <div class="component-container">
+                <div><a href="/" class="bg btn btn-link">
+                        <span class="iconify bg-icon" data-icon="zmdi:shopping-cart" data-inline="false"></span><span
+                            class="bg-num">7</span></a></div>
+                <div><a href="/" class="bg btn btn-link">
+                        <span class="iconify bg-icon" data-icon="mdi:home" data-inline="false"></span><span
+                            class="bg-num">7</span></a></div>
                 <div>
-                    <p class="badge-container">
-                        Text with badge<span class="badge badge-str badge-pos-txt">8</span>
-                    </p>
+                    <a href="/" class="bg btn btn-link">
+                        <span class="iconify bg-icon" data-icon="mdi:cards-heart-outline"
+                            data-inline="false"></span><span class="bg-num">7</span></a>
+                </div>
+                <div>
+                    <a href="/" class="bg btn btn-link">
+                        <span class="iconify bg-icon" data-icon="mdi:cards-heart" data-inline="false"></span><span
+                            class="bg-num">7</span></a>
+                </div>
+            </div>
+
+            <pre>
+                <code class="language-html">
+                        <a href="/" class="bg btn btn-link">
+                            <span class="iconify bg-icon" data-icon="zmdi:shopping-cart" data-inline="false"></span><span class="bg-num">7</span></a>
+                        <a href="/" class="bg btn btn-link">
+                            <span class="iconify bg-icon" data-icon="mdi:home" data-inline="false"></span><span class="bg-num">7</span></a>
+                        <a href="/" class="bg btn btn-link">
+                            <span class="iconify bg-icon" data-icon="mdi:cards-heart-outline" data-inline="false"></span><span class="bg-num">7</span></a>
+                        <a href="/" class="bg btn btn-link">
+                            <span class="iconify bg-icon" data-icon="mdi:cards-heart" data-inline="false"></span><span class="bg-num">7</span></a>
+                </code>
+            </pre>
+
+            <div class="component-container">
+                <div class="bg avatar avatar-ms">
+                    <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img"><span
+                        class="bg-avatar bg-online"></span>
+                </div>
+                <div class="bg avatar avatar-ms">
+                    <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img"><span
+                        class="bg-avatar bg-offline"></span>
+                </div>
+            </div>
+
+            <pre>
+                <code class="language-html">
+                        <div class="bg avatar avatar-ms">
+                            <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img"><span
+                            class="bg-avatar bg-online"></span>
+                        </div>
+                        <div class="bg avatar avatar-ms">
+                        <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img"><span
+                            class="bg-avatar bg-offline"></span>
+                        </div>
+                </code>
+            </pre>
+
+            <div class="component-container flex-col flex-center">
+                <h1>heading h1<span class="bg-txt">new</span></h1>
+                <h2>heading h2<span class="bg-txt">new</span></h2>
+                <h3>heading h3<span class="bg-txt">new</span></h3>
+                <h4>heading h4<span class="bg-txt">new</span></h4>
+                <h5>heading h5<span class="bg-txt">new</span></h5>
+                <h6>heading h6<span class="bg-txt">new</span></h6>
+                <p>paragraph<span class="bg-txt">new</span></p>
+            </div>
+
+            <pre>
+                <code class="language-html">
+                        <h1>heading h1<span class="bg-txt">new</span></h1>
+                        <h2>heading h2<span class="bg-txt">new</span></h2>
+                        <h3>heading h3<span class="bg-txt">new</span></h3>
+                        <h4>heading h4<span class="bg-txt">new</span></h4>
+                        <h5>heading h5<span class="bg-txt">new</span></h5>
+                        <h6>heading h6<span class="bg-txt">new</span></h6>
+                        <p>paragraph<span class="bg-txt">new</span></p>
+                </code>
+            </pre>
+
+
+            <!-- *************button component*********************************************************** -->
+            <h3 class="main-title" id="button">Button</h3>
+            <p class="main-para">
+                Buttons are available in 5 variants such as primary button,
+                outline button, link button, and icon button, and floating button
+            </p>
+
+            <div class="component-container flex-center">
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-outline">outline</button>
+                <a href="#" class="btn btn-link">link</a>
+                <a href="#" class="btn "><span class="iconify btn-icon" data-icon="zmdi:shopping-cart"
+                        data-inline="false"></span></a>
+                <button class="btn "><span class="iconify btn-float" data-icon="mdi:plus-circle"
+                        data-inline="false"></span></button>
+            </div>
+
+            <pre>
+                <code class="language-html">
+                            <button class="btn btn-primary">primary</button>
+                            <button class="btn btn-outline">outline</button>
+                            <a href="#" class="btn btn-link">link</a>
+                            <a href="#" class="btn "><span class="iconify btn-icon" data-icon="zmdi:shopping-cart"
+                                    data-inline="false"></span></a>
+                            <button class="btn "><span class="iconify btn-float" data-icon="mdi:plus-circle"
+                                    data-inline="false"></span></button>
+                </code>
+            </pre>
+
+            <!-- large small btn -->
+            <p class="main-para">
+                Large and small buttons
+            </p>
+            <div class="component-container flex-center">
+                <button class="btn btn-primary btn-ls">primary</button>
+                <button class="btn btn-primary btn-ss">primary</button>
+            </div>
+
+            <pre>
+                <code class="language-html">
+                        <button class="btn btn-primary btn-ls">primary</button>
+                        <button class="btn btn-primary btn-ss">primary</button>
+                </code>
+            </pre>
+
+            <!-- *************card component*********************************************************** -->
+            <h3 class="main-title" id="card">Cards</h3>
+            <p class="main-para">
+                Cards are available in different variants such as
+                horizonal/vertical, text overlay, dismis, badge, and text only card.
+            </p>
+
+            <div class="component-container">
+                <div class="card card-vrt">
+                    <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg"
+                            alt="peanut-butter">
+                    </div>
+                    <div class="card-desc">
+                        <h3>Peanut butter</h3>
+                        <p>by American Garden</p><span class="card-price">Rs 499</span><span><del class="card-mrp">Rs
+                                999</del>
+                            <div class="card-btns">
+                                <button class="card-cart btn btn-primary">add to cart</button><button
+                                    class="card-wishlist btn btn-outline">wishlist</button>
+                            </div>
+                    </div>
                 </div>
 
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EText%2520with%2520badge%253Cspan%2520class%253D%2522badge%2520badge-str%2520badge-pos-txt%2522%253E8%253C%252Fspan%253E%253C%252Fp%253E%2520%2520%2520%2520"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 93px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
-                <div class="badge-container">
-                <div class="avatar avatar-ms ">
-                    <img src="./assest/images/avatar-img.jpg" alt="avatar" class="circle-img" /><span
-                        class="badge-str badge-pos-avtar badge-avatar"></span>
-                </div></div>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-ms%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassest%252Fimages%252Favatar-img.jpg%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522circle-img%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-str%2520badge-pos-avtar%2520badge-avatar%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 167px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
-
-                <!-- *************button component*********************************************************** -->
-                <h3 class="main-title" id="button">Button</h3>
-                <p class="main-para">
-                    Buttons are available in 5 variants such as primary button,
-                    secondary button, link button, and icon button, and floating button
-                </p>
-
-                <div class="component-container flex-center">
-                    <button class="btn btn-primary">primary</button>
-                    <button class="btn btn-secondary">secondary</button>
-                    <a href="#" class="btn btn-link">link</a>
-                    <button class="btn btn-icon">
-                        <span class="iconify" data-icon="zmdi:shopping-cart" data-inline="false"></span>
-                    </button>
-                    <button class="btn btn-float">
-                        <span class="iconify" data-icon="mdi:plus-circle" data-inline="false"></span>
-                    </button>
+                <div class="card card-vrt card-dismis">
+                    <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg"
+                            alt="peanut-butter">
+                    </div>
+                    <div class="card-desc">
+                        <h3>Peanut butter</h3>
+                        <p>by American Garden</p><span class="card-price">Rs 499</span><del class="card-mrp">Rs
+                            999</del>
+                        <div class="card-btns">
+                            <button class="card-cart btn btn-primary">add to cart</button><button
+                                class="card-wishlist btn btn-outline">wishlist</button>
+                        </div>
+                    </div>
+                    <span class="iconify card-dismis-btn" data-icon="mdi:close" data-inline="false"></span>
                 </div>
 
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=900&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Eprimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2509%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253Esecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-link%2522%253Elink%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522iconify%2522%2520data-icon%253D%2522zmdi%253Ashopping-cart%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520data-inline%253D%2522false%2522%253E%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2509%2520%253Cbutton%2520class%253D%2522btn%2520btn-float%2522%253E%253Cspan%2520class%253D%2522iconify%2522%2520data-icon%253D%2522mdi%253Aplus-circle%2522%2520data-%2509%2509%2509%2509%2520%2520%2520inline%253D%2522false%2522%253E%253C%252Fspan%253E%253C%252Fbutton%253E"
-                    style="
-              width: 100%;
-              max-width: 900px;
-              height: 204px;
-              border: 0;
-              transform: scale(1);
-              overflow: auto;
-            " sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <div class="card card-vrt card-badge">
+                    <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg"
+                            alt="peanut-butter">
+                    </div>
+                    <div class="card-desc">
+                        <h3>Peanut butter</h3>
+                        <p>by American Garden</p><span class="card-price">Rs 499</span><del class="card-mrp">Rs
+                            999</del>
+                        <div class="card-btns">
+                            <button class="card-cart btn btn-primary">add to cart</button><button
+                                class="card-wishlist btn btn-outline">wishlist</button>
+                        </div>
+                    </div>
+                    <span class="card-badge-pos">new</span>
+                </div>
+            </div>
 
-                <h3 class="main-title" id="card">Cards</h3>
-                <p class="main-para">
-                    Cards are available in different variants such as
-                    horizonal/vertical, text overlay, dismis, badge, and text only card.
-                </p>
-
-                <!-- *************card component*********************************************************** -->
-                <div class="component-container">
+            <pre>
+                <code class="language-html">
+                    <!-- simple card -->
                     <div class="card card-vrt">
-                        <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg"
-                                alt="peanut-butter">
+                        <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg" alt="peanut-butter">
                         </div>
                         <div class="card-desc">
                             <h3>Peanut butter</h3>
@@ -258,14 +357,14 @@
                                     999</del>
                                 <div class="card-btns">
                                     <button class="card-cart btn btn-primary">add to cart</button><button
-                                        class="card-wishlist btn btn-secondary">wishlist</button>
+                                        class="card-wishlist btn btn-outline">wishlist</button>
                                 </div>
                         </div>
                     </div>
 
+                    <!-- dismis card -->
                     <div class="card card-vrt card-dismis">
-                        <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg"
-                                alt="peanut-butter">
+                        <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg" alt="peanut-butter">
                         </div>
                         <div class="card-desc">
                             <h3>Peanut butter</h3>
@@ -273,15 +372,15 @@
                                 999</del>
                             <div class="card-btns">
                                 <button class="card-cart btn btn-primary">add to cart</button><button
-                                    class="card-wishlist btn btn-secondary">wishlist</button>
+                                    class="card-wishlist btn btn-outline">wishlist</button>
                             </div>
                         </div>
                         <span class="iconify card-dismis-btn" data-icon="mdi:close" data-inline="false"></span>
                     </div>
 
+                    <!-- badge card -->
                     <div class="card card-vrt card-badge">
-                        <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg"
-                                alt="peanut-butter">
+                        <div class="card-img-container"><img class="card-img" src="./assest/images/peanut-product.jpg" alt="peanut-butter">
                         </div>
                         <div class="card-desc">
                             <h3>Peanut butter</h3>
@@ -289,32 +388,60 @@
                                 999</del>
                             <div class="card-btns">
                                 <button class="card-cart btn btn-primary">add to cart</button><button
-                                    class="card-wishlist btn btn-secondary">wishlist</button>
+                                    class="card-wishlist btn btn-outline">wishlist</button>
                             </div>
                         </div>
                         <span class="card-badge-pos">new</span>
                     </div>
+                </code>
+            </pre>
+
+            <div class="component-container flex-end">
+                <div class="card card-vrt card-txt-overlay">
+                    <div class="card-img-container">
+                        <img class="card-img" src="./assest/images/peanut-product.jpg" alt="peanut-butter" />
+                    </div>
+                    <div class="card-desc card-desc-pos">
+                        <h3>Peanut butter</h3>
+                        <p>by American Garden</p>
+                    </div>
                 </div>
 
-                <iframe
-  src="https://carbon.now.sh/embed/wZAKevzWNwwqsmi2DCHX"
-  style="max-width: 900px; height: 411px; border:0; transform: scale(1); overflow:auto;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+                <div class="card card-vrt card-txt">
+                    <div class="card-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis aspernatur,
+                            ratione inventore similique reprehenderit iure voluptas esse unde sit earum odio
+                            impedit, sapiente tenetur excepturi consectetur assumenda, debitis cumque?
+                        </p>
+                        <div class="card-btns card-txt-icons">
+                            <span class="iconify card-icons" data-icon="mdi:cards-heart-outline"
+                                data-inline="false"></span>
+                            <span class="iconify card-icons" data-icon="mdi:share-variant" data-inline="false"></span>
+                            <span class="iconify card-icons" data-icon="mdi:dots-vertical" data-inline="false"></span>
+                        </div>
+                    </div>
+                </div>
 
-<iframe
-  src="https://carbon.now.sh/embed/8qKD3ZkW7i41v0KRfyrq"
-  style="max-width: 900px; height: 435px; border:0; transform: scale(1); overflow:auto;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+                <div class="card card-hz">
+                    <div class="card-img-container card-img-hz"><img class="card-img"
+                            src="./assest/images/peanut-product.jpg" alt="peanut-butter">
+                    </div>
+                    <div class="card-desc">
+                        <h3>Peanut butter</h3>
+                        <p>by American Garden</p><span class="card-price">Rs 499</span><del class="card-mrp">Rs
+                            999</del>
+                        <div class="card-btns card-btns-hz">
+                            <button class="card-cart btn btn-primary ">add to cart</button><button
+                                class="card-wishlist btn btn-outline">wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<iframe
-  src="https://carbon.now.sh/embed/dTocmmZKlb1xiaRTYxvf"
-  style="max-width: 900px; height: 435px; border:0; transform: scale(1); overflow:auto;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-
-                <div class="component-container flex-end">
+            <pre>
+                <code class="language-html">
+                    <!-- text overlay card -->
                     <div class="card card-vrt card-txt-overlay">
                         <div class="card-img-container">
                             <img class="card-img" src="./assest/images/peanut-product.jpg" alt="peanut-butter" />
@@ -324,6 +451,8 @@
                             <p>by American Garden</p>
                         </div>
                     </div>
+
+                    <!-- text only card -->
                     <div class="card card-vrt card-txt">
                         <div class="card-desc">
                             <p>
@@ -341,9 +470,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- horizonal card -->
                     <div class="card card-hz">
-                        <div class="card-img-container card-img-hz"><img class="card-img" src="./assest/images/peanut-product.jpg"
-                                alt="peanut-butter">
+                        <div class="card-img-container card-img-hz"><img class="card-img"
+                                src="./assest/images/peanut-product.jpg" alt="peanut-butter">
                         </div>
                         <div class="card-desc">
                             <h3>Peanut butter</h3>
@@ -351,84 +482,408 @@
                                 999</del>
                             <div class="card-btns card-btns-hz">
                                 <button class="card-cart btn btn-primary ">add to cart</button><button
-                                    class="card-wishlist btn btn-secondary">wishlist</button>
+                                    class="card-wishlist btn btn-outline">wishlist</button>
                             </div>
                         </div>
                     </div>
+                </code>
+            </pre>
 
-                </div>
+            <!-- *************image component*********************************************************** -->
+            <h3 class="main-title" id="image">Images</h3>
+            <p class="main-para">Square responsive image</p>
+            <img src="./assest/images/gym.jpg" alt="gym" class="img-resp component-container" />
+            <p class="main-para">Round image</p>
+            <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp component-container" />
 
-                <iframe
-  src="https://carbon.now.sh/embed/E9NAiZuiAkKsqLJsggdD"
-  style="max-width: 900px; height: 290px; border:0; transform: scale(1); overflow:auto;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-
-
-<iframe
-  src="https://carbon.now.sh/embed/06PkGrsrFcM9U8WvQ7DL"
-  style="max-width: 900px; height: 483px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-
-<iframe
-  src="https://carbon.now.sh/embed/vSw9AUdel6YyQtu6v3uX"
-  style="max-width: 900px; height: 435px; border:0; transform: scale(1); overflow:auto;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-
-                <!-- *************image component*********************************************************** -->
-                <h3 class="main-title" id="image">Images</h3>
-                <p class="main-para">Square responsive image</p>
-                <img src="./assest/images/gym.jpg" alt="gym" class="img-resp component-container" />
-                <p class="main-para">Round image</p>
-                <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp component-container" />
-            </div>
-
-            <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2509%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassest%252Fimages%252Fgym.jpg%2522%2520alt%253D%2522gym%2522%2520class%253D%2522img-resp%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2509%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassest%252Fimages%252Fgym.jpg%2522%2520alt%253D%2522man%2522%2520class%253D%2522img-round-resp%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A"
-                style="
-            width: 100%;
-            max-width: 900px;
-            height: 131px;
-            border: 0;
-            transform: scale(1);
-            overflow: auto;
-          " sandbox="allow-scripts allow-same-origin">
-            </iframe>
-
-            <h3 class="main-title" id="input">Input</h3>
-            <div class="form">
-                <input type="text" placeholder="username" class="form-input" />
-                <input type="text" placeholder="password" class="form-input" />
-                <button class="btn btn-primary form-btn">login</button>
-            </div>
+            <pre>
+                <code class="language-html">
+                    <!-- image responsive -->
+                    <img src="./assest/images/gym.jpg" alt="gym" class="img-resp component-container" />
+                    <!-- round image -->
+                    <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp component-container" />
+                </code>
+            </pre>
 
             <!-- *************form component*********************************************************** -->
-            <div class="form ">
-                <input type="text" placeholder="username" required class="form-input" />
+            <h3 class="main-title" id="input">Input</h3>
+            <!-- input component -->
+            <h3>form component</h3>
+            <form class="form">
+                <label>textarea</label>
+                <textarea class="input-textarea"></textarea>
+            </form>
+
+            <form class="form">
+                <label>Email</label>
+                <input type="text" required class="form-input">
                 <small class="form-error">required</small>
-                <input type="text" placeholder="password" required class="form-input" />
+                <label>Password</label>
+                <input type="text" required class="form-input">
                 <small class="form-error">required</small>
                 <button class="btn btn-primary form-btn">login</button>
+            </form>
+
+            <pre>
+                <code class="language-html">
+                    <!-- input textarea -->
+                    <form class="form">
+                        <label>textarea</label>
+                        <textarea class="input-textarea"></textarea>
+                    </form>
+
+                    <!-- input form -->
+                    <form class="form">
+                        <label>Email</label>
+                        <input type="text" required class="form-input">
+                        <small class="form-error">required</small>
+                        <label>Password</label>
+                        <input type="text" required class="form-input">
+                        <small class="form-error">required</small>
+                        <button class="btn btn-primary form-btn">login</button>
+                    </form>
+                </code>
+            </pre>
+
+            <!-- *************text-utilities component*********************************************** -->
+            <h3 class="main-title" id="text-utilities">Text Utilities</h3>
+            <p class="main-para">Texts are important, different text with different font weight, different heading,
+                different colors, etc. are choose to made the website</p>
+
+            <div class="component-container flex-col">
+                <h1>heading h1</h1>
+                <h2>heading h2</h2>
+                <h3>heading h3</h3>
+                <h4>heading h4</h4>
+                <h5>heading h5</h5>
+                <h6>heading h6</h6>
             </div>
 
-            <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2509%2520%2520%2520%253Cdiv%2520class%253D%2522form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522username%2522%2520class%253D%2522form-input%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2509%2509%2509%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522password%2522%2520class%253D%2522form-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520form-btn%2522%253Elogin%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2509%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522username%2522%2520required%2520class%253D%2522form-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Csmall%2520class%253D%2522form-error%2522%253Erequired%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522password%2522%2520required%2520class%253D%2522form-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%253Csmall%2520class%253D%2522form-error%2522%253Erequired%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520form-btn%2522%253Elogin%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2509%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
-                style="
-            width: 100%;
-            max-width: 900px;
-            height: 370px;
-            border: 0;
-            transform: scale(1);
-            overflow: auto;
-          " sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+                <code class="language-html">
+                <h1>heading h1</h1>
+                <h2>heading h2</h2>
+                <h3>heading h3</h3>
+                <h4>heading h4</h4>
+                <h5>heading h5</h5>
+                <h6>heading h6</h6>
+                </code>
+            </pre>
+
+            <div class="component-container flex-col">
+                <!-- center-text -->
+                <p class="txt-center">center paragraph</p>
+
+                <!-- left-align -->
+                <p class="txt-left">left text</p>
+
+                <!-- right-align -->
+                <p class="txt-right">right text</p>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <p class="txt-center">center paragraph</p>
+                    <p class="txt-left">left text</p>
+                    <p class="txt-right">right text</p>
+                </code>
+            </pre>
+
+            <div class="component-container flex-col">
+                <p class="ft-w-900">font weight 900</p>
+                <p class="ft-w-700">font weight 700</p>
+                <p class="ft-w-500">font weight 500</p>
+                <p class="ft-w-400">font weight 400</p>
+                <p class="ft-w-300">font weight 300</p>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <p class="ft-w-900">font weight 900</p>
+                    <p class="ft-w-700">font weight 700</p>
+                    <p class="ft-w-500">font weight 500</p>
+                    <p class="ft-w-400">font weight 400</p>
+                    <p class="ft-w-300">font weight 300</p>
+                </code>
+            </pre>
+
+            <!-- grey font -->
+            <div class="component-container flex-col">
+                <p class="ft-w-900 ft-grey">font weight 900</p>
+                <p class="ft-w-700 ft-grey">font weight 700</p>
+                <p class="ft-w-500 ft-grey">font weight 500</p>
+                <p class="ft-w-400 ft-grey">font weight 400</p>
+                <p class="ft-w-300 ft-grey">font weight 300</p>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <p class="ft-w-900 ft-grey">font weight 900</p>
+                    <p class="ft-w-700 ft-grey">font weight 700</p>
+                    <p class="ft-w-500 ft-grey">font weight 500</p>
+                    <p class="ft-w-400 ft-grey">font weight 400</p>
+                    <p class="ft-w-300 ft-grey">font weight 300</p>
+                </code>
+            </pre>
+
+            <div class="component-container flex-col">
+                <!-- small text -->
+                <small>small text</small>
+                <del>
+                    <p>fone line through</p>
+                </del>
+                <p class="ft-underline">font underline</p>
+                <p class="ft-capital">font capital</p>
+                <p class="ft-uppercase">font uppercase</p>
+                <p class="ft-lowercase">font lowercase</p>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <small>small text</small>
+                    <p><del>fone line through</del></p>
+                    <p class="ft-underline">font underline</p>
+                    <p class="ft-capital">font capital</p>
+                    <p class="ft-uppercase">font uppercase</p>
+                    <p class="ft-lowercase">font lowercase</p> 
+                </code>
+            </pre>
+
+            <h3 class="main-title" id="list">List</h3>
+            <p class="main-para">List such as normal list, and stacked list</p>
+
+            <!-- *************list component**************************************************** -->
+            <!-- normal list -->
+            <p class="main-para">Normal list with circle, square, number, lower-alpha list style type.</p>
+            <div class="component-container flex-col flex-center">
+                <ul class="unorder-list-circle">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ul>
+                <ul class="unorder-list-sqr">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ul>
+                <ol class="order-list-aphabet">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ol>
+                <ol class="order-list-roman">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ol>
+            </div>
+
+            <pre><code class="html-language">
+                <ul class="unorder-list-circle">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ul>
+                <ul class="unorder-list-sqr">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ul>
+                <ol class="order-list-aphabet">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ol>
+                <ol class="order-list-roman">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ol>
+            </code></pre>
+
+            <!-- stacked list -->
+            <div class=" component-container">
+                <div class="stack-list-container">
+                    <ul class="stack-list">
+                        <li>lorem list one</li>
+                        <li>lorem list two</li>
+                        <li>lorem list three</li>
+                    </ul>
+                </div>
+            </div>
+
+            <pre><code class="component-container">
+                <div class="stack-list-container">
+                    <ul class="stack-list">
+                        <li>lorem list one</li>
+                        <li>lorem list two</li>
+                        <li>lorem list three</li>
+                    </ul>
+                </div>
+            </code></pre>
+
+            <!-- *************Navigation component**************************************************** -->
+            <h2 class="main-title" id="navigation">Navigation</h2>
+            <p class="main-para">Navigation is used in all website, which are some option to navigate pages, and
+                searches, and login the particular website</p>
+
+            <div class="navbar">
+                <h1 class="navbar-title">Fit Store</h1>
+                <div class="navbar-search">
+                    <input type="text" placeholder="search..." class="navbar-input"><span
+                        class="iconify navbar-search-icon" data-icon="bx:bx-search" data-inline="false"></span>
+                </div>
+                <div class="navbar-icons">
+                    <a href="#" class="btn btn-link navbar-login">login</a>
+                    <a class="navbar-wishlist" href="#"><span class="iconify navbar-wishlist-icon"
+                            data-icon="mdi:cards-heart-outline" data-inline="false"></span></a>
+                    <a class="btn btn-link navbar-cart" href="#"><span class="iconify navbar-cart-icon"
+                            data-icon="zmdi:shopping-cart" data-inline="false"></span></a>
+                </div>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <div class="navbar">
+                    <h1 class="navbar-title">Fit Store</h1>
+                    <div class="navbar-search">
+                        <input type="text" placeholder="search..." class="navbar-input"><span
+                            class="iconify navbar-search-icon" data-icon="bx:bx-search" data-inline="false"></span>
+                    </div>
+                    <div class="navbar-icons">
+                        <a href="#" class="btn btn-link navbar-login">login</a>
+                        <a class="navbar-wishlist" href="#"><span class="iconify navbar-wishlist-icon"
+                                data-icon="mdi:cards-heart-outline" data-inline="false"></span></a>
+                        <a class="btn btn-link navbar-cart" href="#"><span class="iconify navbar-cart-icon"
+                                data-icon="zmdi:shopping-cart" data-inline="false"></span></a>
+                    </div>
+                    </div>
+                </code>
+            </pre>
+
+            <!-- *************modal component**************************************************** -->
+            <h2 class="main-title" id="modal">Modal</h2>
+            <p class="main-para">Modals are the screen pop-ups, which appears on the window and blurs the background</p>
+
+            <div class="component-container">
+                <div class="modal card-dismis">
+                    <p class="ft-w-500">Remove item</p>
+                    <p class="ft-w-500 ft-grey">Are you sure you want to remove the item?</p>
+                    <div>
+                        <button class="btn btn-primary">remove</button>
+                        <button class="btn btn-outline">cancel</button>
+                        <span class="card-dismis-btn btn-modal-close">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+            <pre><code class="html-language">
+                <div class="modal card-dismis">
+                    <p class="ft-w-500">Remove item</p>
+                    <p class="ft-w-500 ft-grey">Are you sure you want to remove the item?</p>
+                    <div>
+                        <button class="btn btn-primary">remove</button>
+                        <button class="btn btn-outline">cancel</button>
+                        <span class="card-dismis-btn btn-modal-close" id="modal-closeBtn">&times;</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-modal-open">open modal</button>
+            </code></pre>
+
+            <!-- *************rating component**************************************************** -->
+            <h2 class="main-title" id="rating">Rating</h2>
+            <p class="main-para">Ratings are used in the ecommerce app to rate the product.</p>
+
+            <div class="component-container">
+                <div>
+                    <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                    <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                    <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                    <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                    <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                </div>
+                <span class="rating-num">5<span class="iconify" data-icon="mdi:star" data-inline="false"></span></span>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <!-- normal star rating -->
+                    <div>
+                        <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                        <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                        <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                        <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                        <span class="iconify rating-fill" data-icon="mdi:star" data-inline="false"></span>
+                    </div>
+
+                    <!-- number rating -->
+                        <span class="rating-num">5<span class="iconify" data-icon="mdi:star" data-inline="false"></span></span>
+                </code>
+            </pre>
+
+            <!-- *************toast component**************************************************** -->
+            <h2 class="main-title" id="toast">Toast</h2>
+            <p class="main-para">Toast are the notification which appears on the screens, within few seconds disappears.
+            </p>
+
+            <div class="component-container">
+                <p id="toast-msg" class="toast ft-w-500 ft-grey">This is toast.</p>
+            </div>
+
+            <pre>
+                <code class="html-language">
+                    <p id="toast-msg" class="toast ft-w-500 ft-grey">This is toast.</p>
+                </code>
+            </pre>
+
+            <!-- *************grid component**************************************************** -->
+            <h2 class="main-title" id="grid">Grid</h2>
+            <p class="main-para">Grid are mainly used to make layouts, which can be fit in your screen according to your need.</p>
+
+            <div class="grid-container">
+                <div class="col-left txt-center">item 1</div>
+                <div class="col-right txt-center">item 2</div>
+            </div>
+            <br>
+            <div class="grid-container">
+                <div class="col-left txt-center">item 1</div>
+                <div class="col-mid txt-center">item 3</div>
+                <div class="col-right txt-center">item 2</div>
+            </div>
+            <br>
+            <div class="grid-container-row-col">
+                <div class="row-1 txt-center">item 1</div>
+                <div class="col-1 txt-center">item 2</div>
+                <div class="col-2 txt-center"> item 3</div>
+            </div>
+
+        <pre>
+            <code class="html-language">
+                <div class="grid-container">
+                    <div class="col-left txt-center">item 1</div>
+                    <div class="col-right txt-center">item 2</div>
+                </div>
+        
+                <div class="grid-container">
+                    <div class="col-left txt-center">item 1</div>
+                        <div class="col-mid txt-center">item 3</div>
+                        <div class="col-right txt-center">item 2</div>  
+                    </div>
+            
+                <div class="grid-container-row-col">
+                    <div class="row-1 txt-center">item 1</div>
+                    <div class="col-1 txt-center">item 2</div>
+                    <div class="col-2 txt-center"> item 3</div>
+                </div>
+            </code>
+        </pre>
+
         </main>
     </div>
     <a href="#usage" class="floating-action-btn">
         <span class="iconify" data-icon="mdi:arrow-up-circle" data-inline="false"></span>
     </a>
+
 </body>
 
 </html>
