@@ -4,7 +4,10 @@
  ## How to use it?
 
 Add style link to your ```<head>``` tag.
- ```<link rel="stylesheet" href="https://component-site-fitui.netlify.app/components/components.css" />```
+
+ ```<link
+    rel="stylesheet" href="https://component-site-fitui.netlify.app/components/components.css" 
+    />```
 
 Copy the ```<iframe>``` code in your code or any class
 
