@@ -492,16 +492,20 @@
             <!-- *************image component*********************************************************** -->
             <h3 class="main-title" id="image">Images</h3>
             <p class="main-para">Square responsive image</p>
+            
             <img src="./assest/images/gym.jpg" alt="gym" class="img-resp component-container" />
+        
             <p class="main-para">Round image</p>
-            <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp component-container" />
+            <div class="component-container">
+            <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp" />
+            </div>
 
             <pre>
                 <code class="language-html">
                     <!-- image responsive -->
-                    <img src="./assest/images/gym.jpg" alt="gym" class="img-resp component-container" />
+                    <img src="./assest/images/gym.jpg" alt="gym" class="img-resp" />
                     <!-- round image -->
-                    <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp component-container" />
+                    <img src="./assest/images/gym.jpg" alt="man" class="img-round-resp" />
                 </code>
             </pre>
 
@@ -509,11 +513,14 @@
             <h3 class="main-title" id="input">Input</h3>
             <!-- input component -->
             <h3>form component</h3>
+            <div class="component-container">
             <form class="form">
                 <label>textarea</label>
                 <textarea class="input-textarea"></textarea>
             </form>
+            </div>  
 
+            <div class="component-container">
             <form class="form">
                 <label>Email</label>
                 <input type="text" required class="form-input">
@@ -523,6 +530,7 @@
                 <small class="form-error">required</small>
                 <button class="btn btn-primary form-btn">login</button>
             </form>
+            </div>
 
             <pre>
                 <code class="language-html">

@@ -14,7 +14,8 @@
   margin-bottom: 1rem;
 }
 
-.component-container {
+.component-container,
+.img-round-resp {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
