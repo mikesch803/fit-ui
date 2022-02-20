@@ -2,10 +2,10 @@
   grid-area: header;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-weight: 700;
   padding: 1rem;
-  box-shadow: var(--BOX-SHADOW-HEADER);
-  flex-wrap: wrap;
+  box-shadow: 0 3px 10px 2px #9e9696;
 }
 
 .fit-ui {
@@ -47,4 +47,14 @@
 
 .nav-section ul li {
   display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-icon {
+  font-size: 1.5rem;
+  display: none;
 }

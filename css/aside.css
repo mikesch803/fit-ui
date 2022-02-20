@@ -1,6 +1,6 @@
 .aside {
   grid-area: aside;
-  border-right: 1px solid rgb(216, 214, 214);
+  border-right: 1px solid #d8d6d6;
   font-weight: 600;
 }
 
