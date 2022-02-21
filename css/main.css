@@ -56,3 +56,6 @@ code,
   border-radius: var(--BORDER-RADIUS);
 }
 
+pre code {
+  font-size: 1.2rem;
+}
