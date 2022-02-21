@@ -10,6 +10,7 @@
 Copy the code given below the example in your code or any class
 
  LIVE LINK : url(https://fit-ui.netlify.app/)
+ GITHUB FOR COMPONENTS : url(https://github.com/mikesch803/component-library/tree/dev)
  
  ### components
  - [Alert](https://fit-ui.netlify.app/#alert)
